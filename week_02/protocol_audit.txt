@@ -1,0 +1,4 @@
+
+google.com  REAL IP: 142.251.45.206
+
+Server: nginx/1.24.0 (Ubuntu)
