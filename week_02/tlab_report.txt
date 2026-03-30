@@ -1,0 +1,13 @@
+--- TASK 3: TCP 3-WAY HANDSHAKE EVIDENCE ---
+00:25:41.663624 IP 192.168.64.4.45404 > 142.251.40.238.80: Flags [S], seq 3371876819, win 64240, options [mss 1460,sackOK,TS val 1973491343 ecr 0,nop,wscale 7], length 0
+00:25:41.687216 IP 142.251.40.238.80 > 192.168.64.4.45404: Flags [S.], seq 2877162799, ack 3371876820, win 65535, options [mss 1412,sackOK,TS val 2480549911 ecr 1973491343,nop,wscale 8], length 0
+00:25:41.687336 IP 192.168.64.4.45404 > 142.251.40.238.80: Flags [.], ack 1, win 502, options [nop,nop,TS val 1973491366 ecr 2480549911], length 0
+--- TASK 2: DNS REMEDIATION ---
+Malicious /etc/hosts entry for secure.titancorp.com removed.
+grep titancorp returned no result - local poisoning cleared.
+--- TASK 1: SUBNET REMEDIATION ---
+default via 192.168.64.1 dev enp0s1 
+default via 192.168.64.1 dev enp0s1 proto dhcp src 192.168.64.4 metric 100 
+192.168.10.0/24 dev enp0s1 proto kernel scope link src 192.168.10.150 
+192.168.64.0/24 dev enp0s1 proto kernel scope link src 192.168.64.4 metric 100 
+192.168.64.1 dev enp0s1 proto dhcp scope link src 192.168.64.4 metric 100 
