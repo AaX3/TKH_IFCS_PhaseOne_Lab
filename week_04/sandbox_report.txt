@@ -1,0 +1,10 @@
+==================================================
+SESSION 10: SANDBOX DETONATION REPORT
+Operator: aamari
+==================================================
+
+QUESTION 1: Did the ping to google.com succeed or fail in Host-Only mode?
+ANSWER: I got temporary failure in name resolution
+
+QUESTION 2: Why must a SOC analyst NEVER use "Bridged" mode when detonating unknown malware?
+ANSWER: An SOC analysts because then the malware will no longer be contained or in a locked room it will then be on the same floor as the computer and router and is given access to the entire network. 
