@@ -1,0 +1,19 @@
+==================================================
+SESSION 16: READINESS INVENTORY
+==================================================
+Operator: Aamari Green
+Date: 04/19/26
+
+Confidence Audit (Yes/No):
+1. Nmap (Network Scanning): [N]
+2. Docker (Containerization): [Y]
+3. Linux Hardening (UFW/chmod): [Y]
+4. VS Code Remote-SSH: [Y]
+
+Identify your weakest area and your plan to review it:
+
+Although I did work with Nmap, I executed internal network scanning
+with the ss command, the modern replacement for netstat which scan internal machine 
+to see which applications are listening or each ports. I believe my weakest area is Docker (Containerization).
+I am still familiarizing myself with Docker, I plan to revist week 4's lessons and notebookLM, and research additions resources via YouTube.
+==================================================
