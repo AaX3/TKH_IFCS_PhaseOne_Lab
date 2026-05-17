@@ -1,0 +1,25 @@
+==================================================
+SESSION 26: CLIENT-SIDE ATTACK PAYLOADS
+==================================================
+
+1. REFLECTED XSS
+* Payload Used: [<script>alert('XSS')</script>]
+* Concept: Why does this attack disappear when you refresh the page?
+Answer: The attack disappears on refresh because Reflected XSS is not stored
+anywhere. The payload only exists in the URL/request. Each new page load is a
+fresh request, if the malicious input isn't in that request, nothing executes.
+
+2. STORED XSS (Cookie Theft)
+* Cookie Value Stolen: [Result: "session_id=admin_secret_99812_do_not_share"]
+* Payload Used: [<script>alert(document.cookie)</script>]
+
+3. CROSS-SITE REQUEST FORGERY (CSRF)
+* Malicious URL Crafted: [<img src="http://192.168.1.207/24:8081/transfer?to=Attacker&amount=5000">]
+* Concept: What is the primary defense against CSRF?
+Answer: The primary defense against CSRF is an anti-CSRF token, a secret,
+random value the server gives to the user's browser when a page loads, which
+must be included in any request that changes data (like a transfer). Since an
+attacker on another site cannot read this token, they cannot forge a valid
+request. Other defenses include using POST instead of GET for state-changing
+actions, and the SameSite cookie attribute, which tells the browser not to
+send cookies along with cross-site requests.
