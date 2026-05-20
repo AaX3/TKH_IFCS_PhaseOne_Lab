@@ -1,0 +1,2 @@
+05/20/2026-02:21:41.746612  [**] [1:1000001:1] ICMP Ping Detected [**] [Classification: (null)] [Priority: 3] {ICMP} 172.90.0.1:8 -> 172.90.0.10:0
+05/20/2026-02:30:00.000000  [**] [1:1000002:1] Ghost_Bear Malware Scanner Detected [**] [Classification: (null)] [Priority: 3] {TCP} 172.90.0.2:54321 -> 172.90.0.10:80
